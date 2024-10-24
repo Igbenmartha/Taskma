@@ -11,6 +11,7 @@ import ResetPasswordMessage from './Pages/ResetPasswordMessage';
 import SuccessfulResetPassword from './Pages/SuccessfulResetPassword';
 import UpdatePassword from './Pages/UpdatePassword';
 import MailMessage from './Pages/MailMessage';
+import Home from './Pages/Home';
 
 const App = () => {
   const [loading, setLoading] = useState(true); // Set initial loading state to true
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/reset-password-succsessful" element={<SuccessfulResetPassword />} />
           <Route path="/update-password" element={<UpdatePassword/>} />
           <Route path="/mail-message" element={<MailMessage/>} />
+          <Route path="/home" element={<Home/>} />
         </Routes>
       </HashRouter>
     </MobileOnly>
