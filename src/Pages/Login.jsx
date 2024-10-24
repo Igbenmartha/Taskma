@@ -36,7 +36,7 @@ const Login = () => {
               <div className='forms'> 
                 <p className='forgot' onClick={(()=>navigate('/reset-password'))}>Forget password?</p>
               </div>
-              <button className='Login-Btn'>Login</button>
+              <button className='Login-Btn'onClick={(()=>navigate("/home"))}>Login</button>
             </div>
             <div className='Login-footer'>Don’t have an account? <span onClick={(()=>navigate("/sign-up"))}>Sign Up</span></div>
 

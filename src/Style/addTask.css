@@ -1,0 +1,7 @@
+.AddTask{
+    width: 100%;
+    height: 250px;
+    background: red;
+    position: absolute;
+    bottom:0%;
+}

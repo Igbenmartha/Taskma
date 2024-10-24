@@ -1,0 +1,126 @@
+.Home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.Home-header{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Home-header-logo{
+    width: 45%;
+    height: 70%;
+    background: url("/TASKMA.svg");
+    background-size: contain;
+   background-repeat: no-repeat;
+}
+.Home-pics{
+    width: 47%;
+    height: 26%;
+    background: url('/Home.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Home-text{
+    width: 60%;
+    color: #2A2A2A;
+text-align: center;
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+
+font-weight: 500;
+line-height: 20px;
+display: flex;
+flex-direction: column;
+text-align: center;
+gap:8px;
+}
+.home-tap-text{
+    width: 40%;
+    color: #2A2A2A;
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px
+}
+.home-footer{
+    width: 100%;
+    height: 38%;
+    display: flex;
+    align-items: flex-end;
+
+    & footer{
+width: 100%;
+height: 37%;
+background: #2F313F;
+
+display: flex;
+position: relative;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+/* flex-direction: ; */
+
+    }
+}
+.home-footer-icon-holder{
+    width: 40%;
+    height: 80%;
+    display: flex;
+justify-content: space-between;
+}
+.home-footer-icon-addicon{
+    width: 70px;
+    height: 70px;
+    background: url(/add.svg);
+    background-size: cover;
+    position: absolute;
+    bottom:68.1%;
+    right: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.plus{
+    width: 30px;
+    height: 30px; 
+  background: url(/plus.png);
+ }
+.home-footer-icon-container{
+width: 45%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:2px;
+
+& p{
+    color: rgba(255, 255, 255, 0.87);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150.5%;
+}
+}
+.home-footer-icon{
+    width: 52%;
+    height: 50%;
+    /* background-color:white; */
+    
+   
+}
+.Footer-img{
+    width: 100%;
+    height: 100%;
+}
