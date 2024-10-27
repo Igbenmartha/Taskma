@@ -1,0 +1,117 @@
+.Time-overLay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.Time{
+    width: 327px;
+    height: 208px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap:20px;
+    /* justify-content: space-between; */
+}
+.Time-Header{
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid black;
+    color: #272727;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150.5%;
+display:flex;
+align-items: center;
+justify-content: center;
+
+}
+.time-picker-controls {
+    width: 95%;
+    height: 35%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+}
+.time-picker{
+    width: 75px;
+    height: 65px;
+    border-radius: 4px;
+background: #1A1A1A;
+overflow: auto;
+
+}
+time-column {
+    width: 60px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
+    overflow-y: auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+
+  }
+  
+  .time-option {
+    width: 100%;
+    height: 35%; /* Set height to create a box effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 150.5%;
+
+ 
+    cursor: pointer;
+  
+  }
+  .time-option-period {
+    width: 100%;
+    height: 35%; /* Set height to create a box effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    /* background-color: red; */
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 150.5%;
+
+ 
+    cursor: pointer;
+  
+  }
+  
+  .time-option.selected {
+    /* background-color: #007bff; */
+    /* color: white; */
+    font-size: 20px;
+  }
+  .time-option-period.selected {
+    /* background-color: #007bff; */
+    /* color: white; */
+    font-size: 20px;
+    height: 50%;
+  }
+  
+  
+  
+  
