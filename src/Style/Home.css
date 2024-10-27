@@ -1,6 +1,6 @@
 .Home{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,8 @@
     background-repeat: no-repeat;
 }
 .Home-text{
-    width: 70%;
+    width: 80%;
+    /* background-color: red; */
     color: #2A2A2A;
 text-align: center;
 font-family: Poppins;

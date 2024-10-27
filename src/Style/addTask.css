@@ -1,7 +1,64 @@
 .AddTask{
     width: 100%;
-    height: 250px;
-    background: red;
+    height: 220px;
     position: absolute;
     bottom:0%;
+    display: flex;
+    border-radius: 16px 16px 0px 0px;
+background: #1A1A1A;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.AddTask-container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 150.5%; /* 30.1px */
+}
+.AddTask-input{
+width: 100%;
+height: 20%;
+color: #FFF;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+background: transparent;
+padding: 10px;
+font-weight: 400;
+line-height: 150.5%; /* 27.09px */
+border: none;
+/* outline: 1px w; */
+}
+.addtask-footer{
+    width: 100%;
+    height: 22%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.addtask-footer-holder{
+    width: 40%;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.addtask-footer-icon{
+    width: 24px;
+    height: 24px;
+    /* background-color: wheat; */
+
+    >img{
+        width: 100%;
+        height: 100%;
+    }
 }
