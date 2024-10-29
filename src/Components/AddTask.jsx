@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import "../Style/addTask.css"
 import Calender from './Calender'
+import {useNavigate} from "react-router-dom"
 
 const AddTask = ({setView,setToggle}) => {
+  const navigate = useNavigate();
   const send = ()=>{
     setView(0)
     setToggle(true)
@@ -19,7 +21,7 @@ const AddTask = ({setView,setToggle}) => {
       <div className='addtask-footer-icon' onClick={(()=>setView(2))}>
         <img src="/clock.svg" alt="" />
       </div>
-      <div className='addtask-footer-icon'>
+      <div className='addtask-footer-icon' onClick={(()=>navigate('/example'))}>
         <img src="/rect.svg" alt="" />
       </div>
       <div className='addtask-footer-icon'  onClick={(()=>setView(4))}>

@@ -68,6 +68,8 @@ letter-spacing: -0.32px;
     width: 24px;
     height: 24px;
     background: url(/flag.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .flag-icon img{
@@ -78,6 +80,13 @@ letter-spacing: -0.32px;
 .Flag-box.selected {
     background-color:  #FFFEE9;
     color: #272727;
+}
+.flag-icons{
+    width: 24px;
+    height: 24px;
+    background: url(/flagS.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* .Flag-icon.selected{
     background: url(/flagS.svg);
