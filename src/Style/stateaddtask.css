@@ -1,0 +1,40 @@
+.StateAddTask{
+    width: 92%;
+    height: 22%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+
+
+
+}
+.StateAddTask p{
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150.5%;
+}
+h5{
+    width: 100%;
+    font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150.5%;
+}
+.state-addtask-footer{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.state-addtask-footer-holder{
+    width: 40%;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -2,7 +2,11 @@ import React, { useState } from 'react'
 import "../Style/addTask.css"
 import Calender from './Calender'
 
-const AddTask = ({setView}) => {
+const AddTask = ({setView,setToggle}) => {
+  const send = ()=>{
+    setView(0)
+    setToggle(true)
+  }
   return (
   
     <div className='AddTask'>
@@ -18,12 +22,12 @@ const AddTask = ({setView}) => {
       <div className='addtask-footer-icon'>
         <img src="/rect.svg" alt="" />
       </div>
-      <div className='addtask-footer-icon'>
+      <div className='addtask-footer-icon'  onClick={(()=>setView(4))}>
         <img src="/flag.svg" alt="" />
       </div>
       </div>
-      <div className='addtask-footer-icon'>
-        <img src="/send.svg" alt="" />
+      <div className='addtask-footer-icon'  onClick={send}>
+        <img src="/send.svg" alt=""  />
       </div>
     
     </div>

@@ -1,0 +1,92 @@
+.Flag-overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+}
+.Flag{
+    width: 327px;
+    height: 360px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.Flag-header{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid #979797;
+    color: #272727;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 125% */
+letter-spacing: -0.5px;
+}
+.Flag-box-holder{
+    width: 90%;
+    height: auto;
+    display: flex;
+    /* padding-top: 10px; */
+    /* justify-content: center; */
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.Flag-box{
+    width: 65px;
+    height: 64px;
+    border-radius: 4px;
+background: #272727;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+color: rgba(255, 255, 255, 0.87);
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 131.25% */
+letter-spacing: -0.32px;
+}
+.flag-icon{
+    width: 24px;
+    height: 24px;
+    background: url(/flag.svg);
+    
+}
+.flag-icon img{
+    width: 100%;
+    height: 100%;
+    color: #272727;
+}
+.Flag-box.selected {
+    background-color:  #FFFEE9;
+    color: #272727;
+}
+/* .Flag-icon.selected{
+    background: url(/flagS.svg);
+} */
+ .flag-btn-holder{
+    width: 90%;
+    /* height: 23%; */
+    /* background-color: red; */
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+ }

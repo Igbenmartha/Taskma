@@ -1,0 +1,231 @@
+.Todo-container{
+    width: 94%;
+    /* height: a; */
+    height: 90%;
+    /* background: #0C1A30; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    padding-top: 20px;;
+    /* background-color: red; */
+   
+}
+.Todo-header{
+    width: 50%;
+    height: 8%;
+    background:url(/TASKMA.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.search-holder{
+    width: 100%;
+    height: 44px;
+    border-radius: 4px;
+border: 2px solid #0C1A30;
+display: flex;
+padding: 5px;
+align-items: center;
+gap: 12px;
+}
+.search{
+   
+width: 24px;
+height: 24px;
+ background: url(/search.svg);
+
+}
+.search-holder input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: rgba(12, 26, 48, 0.39);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150.5%; /* 24.08px */
+}
+.todo-holder{
+
+        width: 100%;
+        height:270px;
+        /* background: red; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: auto;  
+    }
+.todo-holder button{
+    width: 76px;
+    height: 31px;
+    border-radius: 6px;
+background: #0C1A30;
+border: none;
+display: flex;
+/* padding: 5px 10px; */
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: rgba(255, 255, 255, 0.87);
+font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 175% */
+letter-spacing: -0.32px;
+flex-shrink: 0;
+}
+.btn-down{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    background:url(/arrow-down.svg);
+}
+.todo{
+    width: 100%;
+    height: 66px;
+    border-radius: 4px;
+background: #2F313F;
+display: flex;
+/* flex-direction: column; */
+align-items: center;
+padding-bottom: 9px;
+}
+.todo-tick-holder{
+width: 12%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+/* background-color: white; */
+}
+.todo-tick{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    fill: #363636;
+stroke-width: 1.5px;
+border: 1px solid rgba(255, 255, 255, 0.87);
+}
+.todo-main{
+    width: 88%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.todo-header{
+    height: 30%;
+    color: rgba(255, 255, 255, 0.87);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 131.25% */
+letter-spacing: -0.32px;
+display: flex;
+align-items: center;
+padding-top: 7px;
+/* justify-content: center; */
+}
+.todo-footer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: white; */
+    color: var(--gray, #AFAFAF);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 150% */
+letter-spacing: -0.32px;
+}
+.task-btn-holder{
+    width: 43%;
+    display: flex;
+    gap:10px;
+
+}
+.task-btn{
+    width: 70px;
+    height: 29px;
+    border-radius: 4px;
+background: #FF8080;
+display: flex;
+align-items: center;
+justify-content: center;
+gap:5px;
+color: #FFF;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 175% */
+letter-spacing: -0.32px;
+text-align: center;
+}
+.homee{
+    width: 16px;
+    height: 16px;
+    background: url(/homee.svg);
+}
+.task-flag-holder{
+    width: 39px;
+    height: 29px;
+    border-radius: 4px;
+border: 1px solid  #8687E7;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
+color: #E8E8E8;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 175% */
+letter-spacing: -0.32px;
+
+}
+.todo-flag{
+    width: 14px;
+    height: 14px;
+    background: url(/flag.png);
+}
+.complete{
+    width: 102px;
+    height: 41px;
+    border-radius: 6px;
+background: #0C1A30;
+border: none;
+display: flex;
+/* padding: 5px 10px; */
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: rgba(255, 255, 255, 0.87);
+font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 175% */
+letter-spacing: -0.32px;
+flex-shrink: 0;
+}
+.todo-holder-complete{
+    width: 100%;
+    height: 125px;
+    /* background-color:green; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;  
+}
