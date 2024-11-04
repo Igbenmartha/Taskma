@@ -1,6 +1,7 @@
 .Welcome{
     width: 100%;
     height: 100vh;
+    background: white;
 }
 .Welcome-header{
     width: 75%;
@@ -35,7 +36,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .Welcome-main{
     width: 100%;
-    height: 80%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,13 +44,12 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .Welcome-main-textHolder{
     width: 100%;
-    height: 30%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:20px;
-    background: white;
+    gap:10px;
 }
 .Welcome-mainText{
     width: 75%;
@@ -66,7 +66,7 @@ line-height: normal;
 /* margin-top: 30px; */
 }
 .Welcome-main-text{
-    width: 50%;
+    width: 55%;
     height: 35%;
     font-family: Poppins;
 font-size: 14px;
@@ -74,6 +74,8 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.175px;
+    /* background: green; */
+
 }
 .Welcome-btnHolder{
     width: 100%;
@@ -118,46 +120,58 @@ line-height: 120%;
 
 @media screen and (max-Width:380px){
     .Welcome-header{
-        height: 20%;
+        height: 12%;
     }
     .Welcome-mainText{
+        width: 80%;
         font-size: 28px;
+        /* background-color: aliceblue; */
     }
     .Welcome-main-textHolder{
-        height: 25%;
+        height: 22%;
+        /* background-color: green; */
+        gap:7px;
     }
     .Welcome-main-text{
-        width: 50%; 
+        width: 62%; 
+        /* background-color: red; */
     }
-    .Welcome-main-textHolder{
+    /* .Welcome-main-textHolder{
         height: 25%;
-    }
+    } */
     .Welcome-main{
-        height: 75%;
+        height: 86%;
     }
     /* .Welcome-btnHolder{
         height: 15%;
     } */
 }
+.Welcome-btnHolder{
+    height: 25%;
+}
 @media screen and (max-Width:320px){
     .Welcome-header{
-        height: 20%;
+        height: 17%;
     } 
     .Welcome-mainText{
         font-size: 22px;
         height: 30%;
     }
     .Welcome-main-textHolder{
-        height: 20%;
-        gap:5px;
+        height: 27%;
+        /* gap:5px; */
+
+
     }
     .Welcome-main{
-        height: 70%;
+        height: 80%;
     }
     .Welcome-main-text{
         width: 60%;
         height: 50%;
+        font-size: 11px;
         line-height: normal;
+
 
     }
      .Welcome-btnHolder{
