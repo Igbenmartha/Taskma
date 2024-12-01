@@ -4,6 +4,11 @@ import { useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
     const navigate = useNavigate()
+    const [email, setemail] = useState();
+    const [activeItem, setActiveItem] = useState(0);
+    const handleSignUp = () => {
+
+    }
   return (
     <div className='SignUp'>
          <div className='Welcome-header'>
@@ -18,7 +23,7 @@ const SignUp = () => {
                 <img src="../../public/mage_email.png" alt="" />
 
                 </div>
-                <input type="email"  placeholder='Email Address' className='Email-input'/>
+                <input type="email" onChange={(e)=> setemail(e.target.value)} placeholder='Email Address' className='Email-input'/>
             </div>
             <div className='input-container'>
                 <div className='input-icon'>
