@@ -7,6 +7,8 @@ import { PacmanLoader } from 'react-spinners';
 
 const Login = () => {
   const navigate = useNavigate();
+  const [seePassword, setseePassword] = useState(false);
+
   const [email, setemail] = useState();
   const [password, setpassword] = useState();
   const [error, seterror] = useState(null);
@@ -25,11 +27,17 @@ const Login = () => {
         icon: 'success',
       });
       setTimeout(() => {
-        // navigate("/home")
-      }, 2000);
+        navigate("/home")
+      }, 3000);
     } catch (error) {
       console.error(error)
       // seterror(error?.data?.message)
+      // seterror(error?.response?.data?.message)
+      Swal.fire({
+        title: 'Failed!',
+        text: error?.code == "ERR_NETWORK" ? error?.message : error?.response?.data?.message || 'An unexpected error occurred.',
+        icon: 'error',
+      });
       console.log(error?.data?.message)
     } finally {
       setloading(false)
@@ -57,9 +65,11 @@ const Login = () => {
           <div className='input-icon'>
             <img src="../../public/Vector.png" alt="Vector" />
           </div>
-          <input type="password" onChange={(e) => setpassword(e.target.value)} placeholder='Password' className='Password-input' />
+          <input type={seePassword ? "text": "password"} onChange={(e) => setpassword(e.target.value)} placeholder='Password' className='Password-input' />
           <div className='input-iconp'>
-            <img src="../../public/Vector1.png" alt="Vector" />
+            <img src="../../public/Vector1.png" alt="Vector"
+            onClick={()=> setseePassword(!seePassword)}
+            />
           </div>
         </div>
         {
